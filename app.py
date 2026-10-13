@@ -95,7 +95,7 @@ Não invente certeza. Se não for possível identificar o material com seguranç
 Não determine a lixeira nem o tempo de decomposição; esses dados serão fornecidos pela base local do aplicativo.
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=[
             types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
             prompt,
